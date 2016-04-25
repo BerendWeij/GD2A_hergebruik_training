@@ -7,7 +7,9 @@ Je maakt alles variabel en instelbaar. Via code of de editor.
 
 Vanaf nu schrijven we code met de insteek:
 > "hoe schrijf ik deze Class zodat ik hem kan hergebruiken"
+
 Inplaats van:
+
 > "hoe krijg ik deze functionaliteit specifiek voor deze game aan de praat"
 
 Zodat als je een Class hebt geschreven, je jezelf een schouderklopje kunt geven en denkt "dat heb ik mooi herbruikbaar geschreven" :)
