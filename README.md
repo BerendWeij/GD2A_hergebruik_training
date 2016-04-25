@@ -5,14 +5,14 @@ In deze repository verkennen we hoe we (echt) goed herbruikbare Classes kunnen s
 Herbruikbare Classes bevatten niet code die specifiek zijn voor een bepaald project.
 Je maakt alles variabel en instelbaar. Via code of de editor.
 
-Vanaf nu schrijven we code met de insteek:
+##### Vanaf nu schrijven we code met de insteek:
 > "hoe schrijf ik deze Class zodat ik hem kan hergebruiken"
 
-Inplaats van:
+##### Inplaats van:
 
 > "hoe krijg ik deze functionaliteit specifiek voor deze game aan de praat"
 
-Zodat als je een Class hebt geschreven, je jezelf een schouderklopje kunt geven en denkt 
+##### Zodat als je een Class hebt geschreven, je jezelf een schouderklopje kunt geven en denkt 
 
 > "dat heb ik mooi herbruikbaar geschreven" :)
 
