@@ -6,15 +6,15 @@ Herbruikbare Classes bevatten niet code die specifiek zijn voor een bepaald proj
 Je maakt alles variabel en instelbaar. Via code of de editor.
 
 Vanaf nu schrijven we code met de insteek:
-"hoe schrijf ik deze Class zodat ik hem kan hergebruiken"
+> "hoe schrijf ik deze Class zodat ik hem kan hergebruiken"
 Inplaats van:
-"hoe krijg ik deze functionaliteit specifiek voor deze game aan de praat"
+> "hoe krijg ik deze functionaliteit specifiek voor deze game aan de praat"
 
 Zodat als je een Class hebt geschreven, je jezelf een schouderklopje kunt geven en denkt "dat heb ik mooi herbruikbaar geschreven" :)
 
 Het mooie aan Classes hergebruiken is dat je ze ook steeds verder kunt verbeteren.
 
-Hoe moet je omgaan met deze repository?
+#### Hoe moet je omgaan met deze repository?
 
 1. Maak een eigen branch met jouw naam voornaam_achternaam
 2. Maak een Unity project en push deze naar jouw branch
