@@ -27,3 +27,7 @@ Het mooie aan Classes hergebruiken is dat je ze ook steeds verder kunt verbetere
 4. Heb je tijd over? Mooi: bedenk of uitbreidingen voor je Camera Class, of voeg andere goede voorbeelden toe aan je project van andere Classes (bijvoorbeeld een Spawner)
 
 ## Succes
+
+Extra verdieping:
+[Smooth animaties, beter dan Lerp](https://chicounity3d.wordpress.com/2014/05/23/how-to-lerp-like-a-pro/)
+[Andere, niet lineaire variaties van Lerp (bounche, elastic, etc.)](https://github.com/mimicteam/easing-for-unity/blob/master/Assets/Easing.cs)
