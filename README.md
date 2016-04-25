@@ -12,7 +12,9 @@ Inplaats van:
 
 > "hoe krijg ik deze functionaliteit specifiek voor deze game aan de praat"
 
-Zodat als je een Class hebt geschreven, je jezelf een schouderklopje kunt geven en denkt "dat heb ik mooi herbruikbaar geschreven" :)
+Zodat als je een Class hebt geschreven, je jezelf een schouderklopje kunt geven en denkt 
+
+> "dat heb ik mooi herbruikbaar geschreven" :)
 
 Het mooie aan Classes hergebruiken is dat je ze ook steeds verder kunt verbeteren.
 
