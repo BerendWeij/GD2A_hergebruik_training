@@ -27,3 +27,4 @@ Het mooie aan Classes hergebruiken is dat je ze ook steeds verder kunt verbetere
 4. Heb je tijd over? Mooi: bedenk of uitbreidingen voor je Camera Class, of voeg andere goede voorbeelden toe aan je project van andere Classes (bijvoorbeeld een Spawner)
 
 ## Succes
+[](http://www.paperchase.co.uk/media/catalog/product/cache/1/image/956x956/9df78eab33525d08d6e5fb8d27136e95/00477277.JPG)
