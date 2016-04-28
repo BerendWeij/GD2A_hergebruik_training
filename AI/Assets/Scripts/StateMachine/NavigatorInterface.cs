@@ -1,4 +1,7 @@
-﻿public interface Navigator
+﻿using UnityEngine;
+
+public interface NavigatorInterface
 {
-    void SetDestination(UnityEngine.Vector3 destination);
+    void SetDest(Vector3 dest, GameObject obj);
+    void UpdatePosition();
 }

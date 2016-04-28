@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 
+namespace States { 
 class Flee : State {
 
     GameObject obj;
@@ -54,4 +55,5 @@ class Flee : State {
     {
         return returnState;
     }
+}
 }

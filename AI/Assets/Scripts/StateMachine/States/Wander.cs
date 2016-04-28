@@ -1,11 +1,12 @@
 ﻿using UnityEngine;
 
+namespace States { 
 class Wander : State {
 
     GameObject obj;
     Animation anim;
     NavMeshAgent agent;
-    Navigator nav;
+    NavigatorInterface nav;
     StatesEnum returnState;
 
     string alertTag, animString;
@@ -14,8 +15,8 @@ class Wander : State {
     Vector3 walkToPos;
     float timeLeft;
 
-    public Wander (string _alertTag, string _animString = "[A][I]Add the correct animation name to the state[A][I]", 
-        NavMeshAgent _agent = null, Navigator _nav = null, float _wanderTime = 10, float _alertRange = 20, float _walkSpeed = 0.5f)
+    public Wander (string _alertTag, string _animString = "[A][I]Add the correct animation name to the state[A][I]",
+        NavigatorInterface _nav = null, NavMeshAgent _agent = null, float _wanderTime = 10, float _alertRange = 20, float _walkSpeed = 0.5f)
     {
         alertTag = _alertTag;
         animString = _animString;
@@ -32,13 +33,14 @@ class Wander : State {
         obj = theObject;
         anim = _anim;
         timeLeft = wanderTime;
-        walkToPos = GenerateNewPos();
+        walkToPos = obj.transform.position;
+        if (nav != null) nav.SetDest(obj.transform.position, obj);
     }
 
     public bool Reason()
     {
         Collider[] objectsInRange = Physics.OverlapSphere(obj.transform.position, alertRange);
-        if (timeLeft < 0) {
+        if (timeLeft < 0 && wanderTime > 0) {
             returnState = StatesEnum.idle;
             return false;
         }       
@@ -56,8 +58,9 @@ class Wander : State {
         timeLeft -= Time.deltaTime;
 
         if (anim && !anim.IsPlaying(animString)) anim.Play(animString);
-        if (agent) agent.SetDestination(GenerateNewPos());
-        else if (nav != null) nav.SetDestination(GenerateNewPos());
+
+        if (nav != null) nav.UpdatePosition();
+        else if (agent) agent.SetDestination(GenerateNewPos());
         else {
             if (Vector3.Distance( obj.transform.position, walkToPos ) > 1) {
                 obj.transform.LookAt(walkToPos);
@@ -66,16 +69,16 @@ class Wander : State {
                 walkToPos = GenerateNewPos();
             }
         }
-        
     }
 
     Vector3 GenerateNewPos ()
     {
-        return new Vector3(Random.Range(0, 50), 0, Random.Range(0, 50));
+        return new Vector3(Random.Range(-50, 50), 0, Random.Range(-50, 50));
     }
 
     public StatesEnum Leave()
     {
         return returnState;
     }
+}
 }

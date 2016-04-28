@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 
+namespace States { 
 class Attack : State {
 
     GameObject obj;
@@ -70,4 +71,5 @@ class Attack : State {
         attacked = 0;
         return returnState;
     }
+}
 }

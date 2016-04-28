@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 
+namespace States { 
 class Idle : State{
 
     GameObject obj;
@@ -55,4 +56,5 @@ class Idle : State{
     {
         return returnState;
     }
+}
 }

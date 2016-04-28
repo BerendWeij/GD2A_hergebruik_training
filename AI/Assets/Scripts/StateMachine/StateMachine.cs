@@ -35,7 +35,7 @@ class StateMachine {
 
     public void UpdateState()
     {
-        Debug.Log(currentState);
+        //Debug.Log(currentState);
 
         if (currentState.Reason()) {
             currentState.Act();

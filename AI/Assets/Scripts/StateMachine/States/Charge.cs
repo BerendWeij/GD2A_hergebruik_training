@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 
+namespace States { 
 class Charge : State {
 
     GameObject obj;
@@ -63,4 +64,5 @@ class Charge : State {
     {
         return returnState;
     }
+}
 }
